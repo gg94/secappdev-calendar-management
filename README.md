@@ -4,7 +4,7 @@ Tool to create ICSs files from a text calendar.
 
 ### Requirements
 
-This script is written in Python 3. Requirements can be installed by usign `pip` with `pip install -r requirements.txt`
+This script is written in Python 3. Requirements can be installed by using `pip` with `pip install -r requirements.txt`
 
 ### Usage
 
@@ -20,4 +20,8 @@ Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get
 
 ### Example
 
-The script can be tested with `python3 ./text_to_icv.py example/calendar.txt example/calendars`.
+The script can be tested with:
+
+```
+python3 ./text_to_icv.py example/calendar.txt example/calendars
+```

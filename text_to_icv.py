@@ -8,7 +8,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("input_file", type=str,
                     help="input text calendar")
 parser.add_argument("output_dir", type=str,
-                    help="output directory to store ICSs (will not be created)")
+                    help="output directory to store ICSs")
 args = parser.parse_args()
 
 # read input text line-by-line
@@ -46,6 +46,9 @@ for cal in cals:
     for idx in range(len(speaker_name)):
         output_name += speaker_name[idx].capitalize()
         
+    if not os.path.exists(args.output_dir):    
+       os.makedirs(args.output_dir)
+    
     with open(os.path.join(args.output_dir, output_name + '.ics'), 'w') as f:
         f.writelines(cals[cal])
         # print(cals[cal].events)
