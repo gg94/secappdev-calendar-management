@@ -11,7 +11,6 @@ parser.add_argument("output_dir", type=str,
                     help="output directory to store ICSs")
 args = parser.parse_args()
 
-# read input text line-by-line
 with open(args.input_file) as f:
     lines = f.readlines()
 
@@ -39,7 +38,7 @@ for line in lines:
     else:
         print("Bad formatted string.")
 
-# write calendars in the output calendars
+# write calendars in the output directory
 for cal in cals:
     speaker_name = cal.split(' ')
     output_name = ''
