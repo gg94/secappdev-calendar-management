@@ -1,16 +1,18 @@
-#!/usr/bin/env python
 import sys
 import os
 import re
+import argparse
 from ics import Calendar, Event
 
-# TODO add output arguments 'input file' and 'output dir'
-if len(sys.argv) != 2 or sys.argv[1] == "-h" or sys.argv[1] == "--help":
-    print("usage: texttoicv [filename]")
-    sys.exit(2)
+parser = argparse.ArgumentParser()
+parser.add_argument("input_file", type=str,
+                    help="input text calendar")
+parser.add_argument("output_dir", type=str,
+                    help="output directory to store ICSs (will not be created)")
+args = parser.parse_args()
 
 # read input text line-by-line
-with open(sys.argv[1]) as f:
+with open(args.input_file) as f:
     lines = f.readlines()
 
 # dictionary of calendars indexed by speakers names
@@ -18,7 +20,8 @@ cals = dict()
 
 name = "([^#]+)#"
 title = "([^#]+)#"
-date = "([0-9]{8}T[0-9]{2}:[0-9]{2})#"
+# date = "([0-9]{8}T[0-9]{2}:[0-9]{2})#"
+date = "([^#]+)#"
 room = "([^#]*)" # discretionary
 
 for line in lines:
@@ -37,13 +40,12 @@ for line in lines:
         print("Bad formatted string.")
 
 # write calendars in the output calendars
-output_dir = ''
 for cal in cals:
     speaker_name = cal.split(' ')
     output_name = ''
     for idx in range(len(speaker_name)):
         output_name += speaker_name[idx].capitalize()
         
-    with open(os.path.join(output_dir, output_name + '.ics'), 'w+') as f:
+    with open(os.path.join(args.output_dir, output_name + '.ics'), 'w') as f:
         f.writelines(cals[cal])
-        print(cals[cal].events)
+        # print(cals[cal].events)
