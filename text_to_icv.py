@@ -37,7 +37,7 @@ for line in lines:
         print("Bad formatted string.")
 
 # write calendars in the output calendars
-output_dir = 'Calendars'
+output_dir = ''
 for cal in cals:
     speaker_name = cal.split(' ')
     output_name = ''
