@@ -8,18 +8,16 @@ This script is written in Python 3. Requirements can be installed by usign `pip`
 
 ### Usage
 
-Calendar events comes in from an input file specified as first positional parameter. Line format is the following (round brackets define discretionary parameters): 
+The script takes two arguments: calendar events comes in from an input file specified as the first positional parameter; while the output directory for the ICSs files have to be specified as the second positional parameter.
+
+Line format is the following (round brackets indicates discretionary parameters): 
 
 ```
 authorname#sessiontitle#startdatetime#enddatetime#(room)
 ```
 
-Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get()` understands. Example datetime for Wednesday, 13 February 2019 at 18:00 is `20190213T18:00 (YYYYMMDD'T'hh:mm)`.
+Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get()` understands. Example datetime for Wednesday, 13 February 2019 at 18:00 is `20190213T18:00 (YYYYMMDD'T'hh:mm)`. 
 
-The output directory for the ICSs files have to be specified as a second positional parameter. 
+### Example
 
-To test the script:
-
-```
-python3 ./text_to_icv.py example/calendar.txt example/calendars
-```
+The script can be tested with `python3 ./text_to_icv.py example/calendar.txt example/calendars`.
