@@ -29,7 +29,7 @@ for line in lines:
         speaker_name = match.group(1)
         if speaker_name not in cals:
             cals[speaker_name] = Calendar()
-        e = Event()         
+        e = Event()                 
         e.name = match.group(2)
         e.begin = match.group(3)
         e.end = match.group(4)
