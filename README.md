@@ -10,7 +10,7 @@ This script is written in Python 3. Requirements can be installed by using `pip`
 
 The script takes two arguments: calendar events comes in from an input file specified as the first positional parameter, while the output directory for the ICSs files has to be specified as the second positional parameter.
 
-Line format is the following (round brackets indicates discretionary parameters): 
+Line format is the following (round brackets indicate discretionary parameters): 
 
 ```
 authorname#sessiontitle#startdatetime#enddatetime#(room)
