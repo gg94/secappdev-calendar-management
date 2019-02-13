@@ -16,7 +16,7 @@ Line format is the following (round brackets indicate discretionary parameters):
 authorname#sessiontitle#startdatetime#enddatetime#(room)
 ```
 
-Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get()` understands. Examples datetime for Wednesday, 13 February 2019 at 18:00 are `20190213T18:00 (YYYYMMDD'T'hh:mm)` and `2019-02-13T18:00 (YYYY-MM-DD'T'hh:mm)`. 
+Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get()` understands. Examples of datetime for Wednesday, 13 February 2019 at 18:00 are `20190213T18:00 (YYYYMMDD'T'hh:mm)` and `2019-02-13T18:00 (YYYY-MM-DD'T'hh:mm)`. 
 
 ### Example
 
