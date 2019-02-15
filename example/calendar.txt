@@ -1,4 +1,4 @@
-Mattheijs Kaminsky#Workshop about Kubernetes#20190212T17:01#2019-02-12T18:01#Room1
-Giuseppe Garofalo#Workshop about Machine Learning#20190212T18:01#2019-02-12T19:00#200.A
-Giuseppe Garofalo#Workshop about Machine Learning#20190213T18:01#20190213T18:30#
-Dimitri van Dimi#Workshop about Rennes#20190212T17:01#20190212T18:00#Room1
+Mattheijs Kaminsky#Workshop about Kubernetes#20190212T17:01+01:00#2019-02-12T18:01+01:00#Room1
+Giuseppe Garofalo#Workshop about Machine Learning#20190212T18:01+01:00#2019-02-12T19:00+01:00#200.A
+Giuseppe Garofalo#Workshop about Machine Learning#20190213T18:01+01:00#20190213T18:30+01:00#
+Dimitri van Dimi#Workshop about Rennes#20190212T17:01+01:00#20190212T18:00+01:00#Room1
