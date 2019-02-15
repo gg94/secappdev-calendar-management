@@ -1,6 +1,6 @@
 # Calendar management script
 
-Tool to create ICSs files from a text calendar of events.
+Tool to create ICS files from a textual calendar of events.
 
 ### Requirements
 
@@ -8,9 +8,9 @@ This script is written in Python 3. Requirements can be installed by using `pip`
 
 ### Usage
 
-The script takes two arguments: calendar events comes in from an input file specified as the first positional parameter, while the output directory for the ICSs files has to be specified as the second positional parameter.
+The script takes two arguments: calendar events come in from an input file specified as the first positional parameter, while the output directory for the ICS files has to be specified as the second positional parameter. Note that the script will create the specified output directory if it doesn't exist.
 
-Tested formats for the input file are `.txt` and `.csv` without a header. Line format is the following (round brackets indicate discretionary parameters): 
+Line format is the following (round brackets indicate discretionary parameters): 
 
 ```
 authorname#sessiontitle#startdatetime#enddatetime#(room)
