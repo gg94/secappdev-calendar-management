@@ -16,7 +16,7 @@ Tested formats for the input file are `.txt` and `.csv` without a header. Line f
 authorname#sessiontitle#startdatetime#enddatetime#(room)
 ```
 
-Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get()` understands. Examples datetime for Wednesday, 13 February 2019 at 18:00 (GMT+1) are `20190213T18:00+01:00 (YYYYMMDD'T'hh:mm+timezone)` and `2019-02-13T17:00 (YYYY-MM-DD'T'hh:mm+00:00)`. 
+Datetimes are `Arrow`-compatible, i.e have to be set to anything that `Arrow.get()` understands. Examples of datetime for Wednesday, 13 February 2019 at 18:00 (GMT+1) are `20190213T18:00+01:00 (YYYYMMDD'T'hh:mm+timezone)` and `2019-02-13T17:00 (YYYY-MM-DD'T'hh:mm+00:00)`. 
 
 ### Example
 
